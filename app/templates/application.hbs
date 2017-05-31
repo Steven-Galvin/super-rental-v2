@@ -1,2 +1,12 @@
-{{outlet}}
-<footer>{{#link-to 'index'}}Home{{/link-to}}</footer>
+<div class="container">
+  <header class="jumbotron">
+    <h1>Super Rentals</h1>
+  </header>
+    {{outlet}}
+  <hr>
+  <footer>
+    {{#link-to 'about'}}About{{/link-to}} |
+    {{#link-to 'index'}}Home{{/link-to}} |
+    {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+  </footer>
+</div>
