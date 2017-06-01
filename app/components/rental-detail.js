@@ -7,8 +7,13 @@ export default Ember.Component.extend({
         this.sendAction('destroyRental', rental);
       }
     },
+    
     update(rental, params) {
       this.sendAction('update', rental, params);
+    },
+
+    destroyReview(review) {
+      this.sendAction('destroyReview', review);
     }
   }
 });
