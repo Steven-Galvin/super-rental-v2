@@ -16,11 +16,9 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model.reviews as |review|}}
-    <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
+    <li>{{review.rating}} - {{review.content}} - by {{review.author}} | {{review.rental.owner}}'s {{review.rental.type}}</li>
   {{/each}}
 </ul>
-
-{{new-review saveReview="saveReview"}}
 
 <h2> Announcements </h2>
 
